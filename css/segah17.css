@@ -1,0 +1,62 @@
+@font-face {
+    font-family: roboto-light;
+    src: url(font/roboto/Roboto-Light.eot);
+}
+
+html {
+  font-size: 10pt;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.welcome{
+  line-height: normal;
+  font-size: 2em;
+  font-family: roboto-black;
+}
+
+.welcome-subtitle{
+  line-height: normal;
+  font-size: 1.5em;
+
+}
+.ieeelogo{
+  padding-top: 20px;
+  width: 200px;
+}
+
+.homeimg{
+    min-width: 100%;
+    margin-bottom: 50px;:
+}
+
+
+.brand-logo{
+margin-left: 5%;
+}
+
+.cinza-text{color:#414A51;}
+
+.forte{
+  font-weight: bold;
+}
+nav{
+   background-color: #FDDC00;
+    font-family: roboto-light;
+}
+
+footer.page-footer{
+  border-top: 1px solid #eeeeee;
+    background-color: #eeeeee;
+}
+.collection{
+  border: none;
+}
