@@ -1,7 +1,16 @@
-@font-face {
-    font-family: roboto-light;
-    src: url(font/roboto/Roboto-Light.eot);
+.redline{
+  border: 1px solid red;
 }
+
+@font-face {
+    font-family: Bebas;
+    src: url(../font/BebasNeueRegular.eot?#iefix) format('embedded-opentype'), url(../font/BebasNeueRegular.woff) format('woff'), url(../font/BebasNeueRegular.ttf) format('truetype'), url(../font/BebasNeueRegular.svg#BebasNeueRegular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 html {
   font-size: 10pt;
@@ -12,51 +21,195 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+p{
+  margin-top: 0;
+}
+nav ul a{
+  font-weight: bolder;
+    text-transform: uppercase;
+}
 
 main {
   flex: 1 0 auto;
 }
 
+.bebas{
+  font-family: Bebas;
+}
+
+.subtitles{
+font-size: 1.3em;
+}
+
+.white-text{
+    color: white;
+}
+
+.cinza-text{
+  color:#414A51;
+}
+
+.cinza-text-light{
+  color:#eeeeee;
+}
+
+
+.negrito{
+  font-weight: bold;
+}
+
+.listas{
+  list-style-type:circle;
+}
+
+.logo{
+  padding: 4px;
+  padding-left: 20px;
+  
+}
+
+.destaque-yellow{
+  font-weight: 500;
+  background-color: #ffd600;
+  padding: 20px;
+}
+
+.card-title-yellow{
+
+    background-color: #ffd600;
+padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#414A51;
+}
+
+
+td{
+padding: 5px;
+}
+
+nav{
+   background-color: #ffd600;
+}
+
+footer.page-footer{
+  border-top: 1px solid #eeeeee;
+  background-color: #eeeeee;
+}
+
+address{
+      font-style:normal;
+}
+
+.imagemPerth-0{
+  background-image: url('../assets/perth0.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.imagemPerth-1{
+  background-image: url('../assets/perth1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.imagemPerth-2{
+  background-image: url('../assets/perth2.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.imagemPerth-3{
+  background-image: url('../assets/perth3.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.imagemPerth-4{
+  background-image: url('../assets/perth4.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.imagemPerth-5{
+  background-image: url('../assets/perth5.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
 .welcome{
+  margin-top: 50px;
   line-height: normal;
-  font-size: 2em;
-  font-family: roboto-black;
+  font-size: 4em;
+
 }
 
 .welcome-subtitle{
   line-height: normal;
   font-size: 1.5em;
-
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 .ieeelogo{
-  padding-top: 20px;
+  padding-top: 40%;
   width: 200px;
 }
 
-.homeimg{
-    min-width: 100%;
-    margin-bottom: 50px;:
+
+.card .card-image img{
+  width: 50%;
+}
+.card-image{
+  background-color: #ffd600;
+}
+.topics{
+  line-height: 1.5;
+}
+.card .card-content{
+line-height: 2em;
 }
 
+.card-image {
+  padding: 0px;
 
-.brand-logo{
-margin-left: 5%;
 }
+.card .card-title{
 
-.cinza-text{color:#414A51;}
-
-.forte{
-  font-weight: bold;
-}
-nav{
-   background-color: #FDDC00;
-    font-family: roboto-light;
-}
-
-footer.page-footer{
-  border-top: 1px solid #eeeeee;
-    background-color: #eeeeee;
+    font-size: 3em;
 }
 .collection{
   border: none;
+}
+
+
+@media only screen and (max-width: 736px) {
+    /* Small screen, non-retina */
+.imagemPerth-0{  background-image: url('../assets/perth0-sm.jpg');}
+.imagemPerth-1{  background-image: url('../assets/perth1-sm.jpg');}
+.imagemPerth-2{  background-image: url('../assets/perth2-sm.jpg');}
+.imagemPerth-3{  background-image: url('../assets/perth3-sm.jpg');}
+.imagemPerth-4{  background-image: url('../assets/perth4-sm.jpg');}
+.imagemPerth-5{  background-image: url('../assets/perth5-sm.jpg');}
+}
+
+@media only screen and (min-width: 737px) and (max-width: 800px) {
+.imagemPerth-0{  background-image: url('../assets/perth0-sm.jpg');}
+.imagemPerth-1{  background-image: url('../assets/perth1-md.jpg');}
+.imagemPerth-2{  background-image: url('../assets/perth2.jpg');}
+.imagemPerth-3{  background-image: url('../assets/perth3-md.jpg');}
+.imagemPerth-4{  background-image: url('../assets/perth4-md.jpg');}
+.imagemPerth-5{  background-image: url('../assets/perth5-md.jpg');}
 }
